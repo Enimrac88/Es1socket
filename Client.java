@@ -11,7 +11,7 @@ public class Client {
         // Un solo costrutto try-with-resources per tutte le risorse
         
         // === STABILIRE LA CONNESSIONE E INIZIALIZZARE GLI STREAM ===
-        try (Socket socket = new Socket("localhost", 6789);
+        try (Socket socket = new Socket("10.220.91.131", 6789);
              BufferedReader inputStream = new BufferedReader(
                      new InputStreamReader(socket.getInputStream()));
              PrintWriter outputStream = new PrintWriter(
